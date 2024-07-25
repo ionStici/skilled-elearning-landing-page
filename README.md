@@ -1,44 +1,46 @@
-# **Skilled e-learning landing page solution**
+# Skilled e-Learning Landing Page
 
 This is a solution to the [Skilled e-learning landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/skilled-elearning-landing-page-S1ObDrZ8q).
 
-## **Table of contents**
+## Overview
 
-- [Screenshot](#screenshot)
-- [Links](#links)
-- [Built with](#built-with)
-- [What I learned](#what-i-learned)
-- [Continued development](#continued-development)
-- [Author](#author)
+The **Skilled e-Learning Landing Page** project is a single-page website showcasing a modern e-learning platform. This page highlights the platform's key features, popular courses, and overall value proposition, designed to attract potential students.
 
-## **Screenshot**
+- [Live Demo of the Project](https://ionstici.github.io/skilled-elearning-landing-page)
+- [Published on Frontend Mentor](https://www.frontendmentor.io/solutions/skilled-elearning-landing-page-M8TAeGlpyl)
 
-![](./assets/screenshot.jpeg)
+## Project Preview
 
-## **Links**
+![](assets/preview.jpg)
 
-- [Solution URL](https://github.com/ionStici/skilled-elearning-landing-page)
-- [Live Site URL](https://ionstici.github.io/skilled-elearning-landing-page)
+## Built With
 
-## **Built with**
+- **HTML5:** For the structure and semantic markup of the webpage.
+- **CSS3:** For styling and layout, including flexbox and responsive design techniques.
 
-- Semantic HTML5 markup
-- CSS3
-- Flexbox
-- CSS Grid
-- Responsive Images
-- Media queries
+## Features
 
-## **What I learned**
+- **Responsive Design:** The layout adapts to various screen sizes, providing an optimal viewing experience on both desktop and mobile devices.
+- **Responsive Image:** The hero image uses responsive techniques to ensure it displays well across different devices and screen resolutions.
 
-That CSS can be complex.
+## Challenges and Learnings
 
-## **Continued development**
+In this project, I focused on creating a clean, responsive layout using only HTML and CSS. I learned to implement responsive images effectively and enhanced my skills in CSS, particularly with flexbox. This project also gave me the opportunity to refine my understanding of design principles, such as visual hierarchy and balance.
 
-Clearly i should review the topic about responsive images.
+## Installation and Usage
 
-## **Author**
+```bash
+git clone https://github.com/ionStici/skilled-elearning-landing-page.git
+cd skilled-elearning-landing-page
+live-server
+```
 
-- GitHub - [@ionStici](https://github.com/ionStici)
-- Frontend Mentor - [@ionStici](https://www.frontendmentor.io/profile/ionStici)
-- Twitter - [@IonStici3](https://twitter.com/IonStici3)
+The `index.html` and `styles.css` are the core files that structure the page.
+
+## Contributing
+
+Contributions are welcome! If you have suggestions or improvements, feel free to open an issue.
+
+## Acknowledgments
+
+[Frontend Mentor](https://www.frontendmentor.io/) For providing the challenge and design inspiration.

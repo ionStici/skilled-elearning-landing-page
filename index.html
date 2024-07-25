@@ -1,91 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  <title>Skilled e-learning landing page | Frontend Mentor</title>
-
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-
-    <nav class="nav">
-        <img class="logo" src="./assets/logo-dark.svg" alt="Logo">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skilled e-Learning Landing Page</title>
+    <meta name="description" content="Frontend Mentor Challenge">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📕</text></svg>" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="box">
+        <img class="logo" src="assets/logo-dark.svg" alt="Logo" />
         <button class="btn btn--black">Get Started</button>
+      </div>
     </nav>
-
-
-    <header class="header">
-
-        <div class="header__cta">
-            <h1 class="heading-1">Maximize skill, minimize budget</h1>
-            <p class="paragraph">Our modern courses across a range of in-demand skills will give you the knowledge you need to live the life you want.</p>
-            <button class="btn btn--red">Get Started</button>
-        </div>
-
-        <div class="header__img-box">
-            <img class="header__img" src="./assets/image-hero-desktop.png" alt="Woman learning online and enjoying a coffee">
-            <img class="header__img--tablet" src="./assets/image-hero-tablet.png" alt="Woman learning online and enjoying a coffee">
-            <img class="header__img--mobile" src="./assets/image-hero-mobile.png" alt="Woman learning online and enjoying a coffee">
-        </div>
-
+    <header>
+      <div class="hero__container">
+      <div class="hero__cta">
+        <h1 class="heading-1 w-330 mb-26-30">Maximize skill, minimize budget</h1>
+        <p class="paragraph max-w-450 mb-24-40 dk-ls-3">Our modern courses across a range of in-demand skills will give you the knowledge you need to live the life you want.</p>
+        <button class="btn btn--red">Get Started</button>
+      </div>
+      <div class="hero__img-box">
+        <picture>
+          <source srcset="assets/image-hero-desktop.webp 1x, assets/image-hero-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1200px)" />
+          <source srcset="assets/image-hero-tablet.webp 1x, assets/image-hero-tablet@2x.webp 2x" type="image/webp" media="(min-width: 768px)" />
+          <source srcset="assets/image-hero-mobile.webp 1x, assets/image-hero-mobile@2x.webp 2x" type="image/webp" />
+          <source srcset="assets/image-hero-desktop.png 1x, assets/image-hero-desktop@2x.png 2x" media="(min-width: 1200px)" />
+          <source srcset="assets/image-hero-tablet.png 1x, assets/image-hero-tablet@2x.png 2x" media="(min-width: 768px)" />
+          <source srcset="assets/image-hero-mobile.png 1x, assets/image-hero-mobile@2x.png 2x" />
+          <img class="hero__img" src="assets/image-hero-mobile.png" alt="Woman learning online and enjoying a coffee." width="343" height="322">
+        </picture>
+      </div>
+      </div>
     </header>
-
-
-    <main class="main">
-        <div class="container">
-
-            <div class="first-card">
-                <h2 class="heading-2--mod">Check out our most popular courses!</h2>
-            </div>
-
-            <div class="card">
-                <img class="card__icon" src="./assets/icon-animation.svg" alt="Icon">
-                <h2 class="heading-2">Animation</h2>
-                <p class="paragraph">Learn the latest animation techniques to create stunning motion design and captivate your audience.</p>
-                <a class="link link--position-bottom" href="#">Get Started</a>
-            </div>
-
-            <div class="card">
-                <img class="card__icon" src="./assets/icon-design.svg" alt="Icon">
-                <h2 class="heading-2">Design</h2>
-                <p class="paragraph">Create beautiful, usable interfaces to help shape the future of how the web looks.</p>
-                <a class="link link--position-bottom" href="#">Get Started</a>
-            </div>
-
-            <div class="card">
-                <img class="card__icon" src="./assets/icon-photography.svg" alt="Icon">
-                <h2 class="heading-2">Photography</h2>
-                <p class="paragraph">Explore critical fundamentals like lighting, composition, and focus to capture exceptional photos.</p>
-                <a class="link link--position-bottom" href="#">Get Started</a>
-            </div>
-
-            <div class="card">
-                <img class="card__icon" src="./assets/icon-crypto.svg" alt="Icon">
-                <h2 class="heading-2">Crypto</h2>
-                <p class="paragraph">All you need to know to get started investing in crypto. Go from beginner to advanced with this 54 hour course.</p>
-                <a class="link link--position-bottom" href="#">Get Started</a>
-            </div>
-
-            <div class="card">
-                <img class="card__icon" src="./assets/icon-business.svg" alt="Icon">
-                <h2 class="heading-2">Business</h2>
-                <p class="paragraph">A step-by-step playbook to help you start, scale, and sustain your business without outside investment.</p>
-                <a class="link link--position-bottom" href="#">Get Started</a>
-            </div>
-
+    <main>
+      <div class="container">
+        <div class="card-red">
+          <h2 class="heading-2--mod">Check out our most popular courses!</h2>
         </div>
+        <div class="card">
+          <img class="card__icon" src="./assets/icon-animation.svg" alt="Animation Icon" width="56" height="56" />
+          <h2 class="heading-2 mb-16-24">Animation</h2>
+          <p class="paragraph mb-24">Learn the latest animation techniques to create stunning motion design and captivate your audience.</p>
+          <a class="link mt-auto" href=".">Get Started</a>
+        </div>
+        <div class="card">
+          <img class="card__icon" src="./assets/icon-design.svg" alt="Design Icon" width="56" height="56" />
+          <h2 class="heading-2 mb-16-24">Design</h2>
+          <p class="paragraph mb-24">Create beautiful, usable interfaces to help shape the future of how the web looks.</p>
+          <a class="link mt-auto" href=".">Get Started</a>
+        </div>
+        <div class="card">
+          <img class="card__icon" src="./assets/icon-photography.svg" alt="Photography Icon" width="56" height="56" />
+          <h2 class="heading-2 mb-16-24">Photography</h2>
+          <p class="paragraph mb-24">Explore critical fundamentals like lighting, composition, and focus to capture exceptional photos.</p>
+          <a class="link mt-auto" href=".">Get Started</a>
+        </div>
+        <div class="card">
+          <img class="card__icon" src="./assets/icon-crypto.svg" alt="Crypto Icon" width="56" height="56" />
+          <h2 class="heading-2 mb-16-24">Crypto</h2>
+          <p class="paragraph mb-24">All you need to know to get started investing in crypto. Go from beginner to advanced with this 54 hour course.</p>
+          <a class="link mt-auto" href=".">Get Started</a>
+        </div>
+        <div class="card">
+          <img class="card__icon" src="./assets/icon-business.svg" alt="Business Icon" width="56" height="56" />
+          <h2 class="heading-2 mb-16-24">Business</h2>
+          <p class="paragraph mb-24">A step-by-step playbook to help you start, scale, and sustain your business without outside investment.</p>
+          <a class="link mt-auto" href=".">Get Started</a>
+        </div>
+      </div>
     </main>
-
-
-    <footer class="footer">
-        <div class="footer__container">
-            <img class="logo" src="./assets/logo-light.svg" alt="Logo">
-            <button class="btn btn--purple">Get Started</button>
-        </div>
+    <footer>
+      <div class="box">
+        <img class="logo" src="assets/logo-light.svg" alt="Logo">
+        <button class="btn btn--purple">Get Started</button>
+      </div>
     </footer>
-
-</body>
+  </body>
 </html>

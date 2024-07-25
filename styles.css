@@ -1,0 +1,435 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+button {
+  font-family: inherit;
+}
+
+/* Standalone */
+
+.heading-1 {
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 5rem;
+  color: #13183f;
+}
+
+.heading-2 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: 800;
+  color: #13183f;
+}
+
+.heading-2--mod {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  font-weight: 500;
+  color: #83869a;
+}
+
+.logo {
+  display: block;
+  width: 9rem;
+}
+
+.link,
+.link:link,
+.link:visited {
+  width: fit-content;
+  text-decoration: none;
+  color: #f74780;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  font-weight: 700;
+  transition: color 0.25s;
+}
+
+.link:focus {
+  outline: none;
+  box-shadow: 0 0.2rem 0 #ffa7c3;
+}
+
+.link:hover,
+.link:active {
+  color: #ffa7c3;
+}
+
+.btn {
+  width: 14rem;
+  height: 4.8rem;
+  border: none;
+  border-radius: 50rem;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2.8rem;
+  transition: background-color 0.25s, outline 0.1s, transform 0.2s;
+}
+
+.btn--black {
+  background-color: #13183e;
+}
+
+.btn--red {
+  width: 16.7rem;
+  height: 5.6rem;
+  background-image: linear-gradient(to top, #f02aa6, #ff6f48);
+}
+
+.btn--purple {
+  background-image: linear-gradient(to top, #f02aa6, #f02aa6, #4851ff);
+}
+
+.btn:focus {
+  outline-offset: 0.3rem;
+  outline-width: 0.3rem;
+  outline-style: solid;
+}
+
+.btn--black:focus {
+  outline-color: #13183e;
+}
+
+.btn--red:focus {
+  outline-color: #ff6f48;
+}
+
+.btn--purple:focus {
+  outline-color: #4851ff;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.btn--black:hover {
+  background-color: #666ca3;
+  outline: none;
+}
+
+.btn--red:hover {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), linear-gradient(to top, rgba(240, 42, 167, 1), rgba(255, 112, 72, 1));
+  outline: none;
+}
+
+.btn--purple:hover {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), linear-gradient(to top, #f02aa6, #f02aa6, #4851ff);
+  outline: none;
+}
+
+/* Hero */
+
+header {
+  padding: 0 1.6rem;
+  padding-top: 3.8rem;
+}
+
+.max-w-450 {
+  max-width: 45rem;
+}
+
+.hero__container {
+  position: relative;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.hero__cta {
+  margin-bottom: 3rem;
+}
+
+.hero__img-box {
+  margin-bottom: 2rem;
+}
+
+.hero__img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Cards */
+
+main {
+  padding: 0 1.6rem 8rem 1.6rem;
+  background-image: linear-gradient(to top, #f0f1ff 50%, #fff 100%);
+}
+
+.container {
+  max-width: 50rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 4rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 5.6rem 2.8rem 3.2rem 2.8rem;
+  border-radius: 1rem;
+  background-color: #fff;
+  box-shadow: 0 2.5rem 5rem rgba(6, 22, 141, 0.05);
+}
+
+.card-red {
+  border-radius: 1rem;
+  padding: 2.4rem 2.8rem 3.2rem 2.8rem;
+  background-image: linear-gradient(to top, #f02aa6, #ff6f48);
+}
+
+.card__icon {
+  position: absolute;
+  z-index: 1;
+  top: -2.8rem;
+  left: 2.8rem;
+}
+
+/* Nav and Footer */
+
+nav {
+  padding: 1.6rem 1.6rem 0 1.6rem;
+}
+
+footer {
+  padding: 3.6rem 1.6rem;
+  background-color: #13183f;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+/* Utilities */
+
+.mb-16-24 {
+  margin-bottom: 1.6rem;
+}
+
+.mb-24 {
+  margin-bottom: 2.4rem;
+}
+
+.mb-26-30 {
+  margin-bottom: 2.6rem;
+}
+
+.mb-24-40 {
+  margin-bottom: 2.4rem;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 768px) {
+  header {
+    padding: 10rem 4rem 21rem 4rem;
+  }
+
+  .hero__container {
+    max-width: 111rem;
+    display: flex;
+  }
+
+  .hero__cta {
+    flex-basis: 58%;
+    margin-bottom: 0;
+  }
+
+  .hero__img-box {
+    flex-basis: 42%;
+    margin-bottom: 0;
+    position: relative;
+  }
+
+  .hero__img {
+    width: revert;
+    height: revert;
+
+    position: absolute;
+    z-index: -1;
+    left: -6.5rem;
+    top: -27rem;
+  }
+
+  main {
+    padding: 0 4rem 8.6rem 4rem;
+  }
+
+  .container {
+    max-width: 111rem;
+
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    column-gap: 1.6rem;
+    row-gap: 5.6rem;
+  }
+
+  .card,
+  .card-red {
+    flex: 1 1;
+    max-width: 50rem;
+    min-width: 32rem;
+  }
+
+  .card-red {
+    padding: 5.6rem 3.2rem 0 3.2rem;
+  }
+
+  .card__icon {
+    left: 3.2rem;
+  }
+
+  nav {
+    padding: 2.4rem 4rem 0 4rem;
+  }
+
+  footer {
+    padding: 3.6rem 4rem;
+  }
+
+  .box {
+    max-width: 111rem;
+  }
+
+  .w-330 {
+    width: 33rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  header {
+    padding: 17.8rem 4rem 25rem 4rem;
+  }
+
+  .w-330 {
+    width: revert;
+  }
+
+  .max-w-450 {
+    max-width: revert;
+  }
+
+  .hero__cta {
+    flex-basis: revert;
+    width: 46rem;
+  }
+
+  .hero__img-box {
+    flex-basis: revert;
+    flex-grow: 1;
+  }
+
+  .hero__img {
+    left: 10rem;
+    top: -40rem;
+  }
+
+  .dk-ls-3 {
+    letter-spacing: 0.03rem;
+  }
+
+  main {
+    padding-bottom: 14rem;
+  }
+
+  .container {
+    column-gap: 3rem;
+  }
+
+  .card {
+    padding: 6.4rem 3.2rem 4rem 3.2rem;
+    border-radius: 1.5rem;
+  }
+
+  .card-red {
+    padding-top: 6.4rem;
+  }
+
+  .heading-1 {
+    font-size: 5.6rem;
+    line-height: 7.5rem;
+  }
+
+  .heading-2--mod {
+    font-size: 3.2rem;
+    line-height: 4rem;
+  }
+
+  .heading-2 {
+    font-size: 2.4rem;
+    line-height: 3rem;
+  }
+
+  .paragraph {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+
+  .btn {
+    width: 16.7rem;
+    height: 5.6rem;
+    font-size: 1.8rem;
+  }
+
+  .logo {
+    width: revert;
+  }
+
+  footer {
+    padding: 3.2rem 4rem;
+  }
+
+  .btn--red {
+    height: 6.3rem;
+  }
+
+  .mb-16-24 {
+    margin-bottom: 2.4rem;
+  }
+
+  .mb-26-30 {
+    margin-bottom: 3rem;
+  }
+
+  .mb-24-40 {
+    margin-bottom: 4rem;
+  }
+}
